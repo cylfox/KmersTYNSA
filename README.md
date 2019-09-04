@@ -36,17 +36,17 @@ def generate_dictionary(sequence, kmer_size, alphabet, o_file_name):
 ```python
 def group_dictionary(dic):
 ```
-> Given a sorted dictionary makes a new one 
+> Given a sorted dictionary makes a new one grouping positions by the kmer hash (eg. ACCT, [12, 231, 235]).
 ---
 ```python
 def generate_hits(i_file_name_1, i_file_name_2, o_file_name):
 ```
-> 
+> Compares two dictionaries files to get the hits between them and dump it to a file.
 ---
 ```python
 def fragment_extension_from_hits(hits_file_name, output_file_name, sequence_1, sequence_2, kmer_size):
 ```
-> 
+> Find the seeds and extend them to get new fragments.
 ---
 ```python
 def fragment_extension_from_hits2(hits_file_name, output_file_name, sequence_1, sequence_2, kmer_size):
