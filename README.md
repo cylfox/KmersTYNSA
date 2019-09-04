@@ -5,45 +5,38 @@ Find seeds for alignments in long nucleotides sequences
 ```python
 def load_seq(sequence_file_name):
 ```
-> Loads the desired sequence in memory
+> Loads the desired sequence in memory.
 ---
-
-```python
-def load_seq(sequence_file_name):
-```
-> 
----
-
 ```python
 def change_char(string, position, replacement_char):
 ```
-> 
+> Allows to change a letter for another in a string.
 ---
 
 ```python
 def kmer_index(sequence, kmer_size, alphabet):
 ```
-> 
+> Get the kmer index from a string of nucleotides of kmer size (there's 4 possibilities for each word in the nucleotides alphabet).
 ---
 ```python
 def kmer_index2word(kmer_hash, kmer_size, alphabet):
 ```
-> 
+> Translates a kmer index to the respective nucleotides.
 ---
 ```python
 def compute_frequency(sequence, kmer_size, alphabet):
 ```
-> 
+> Index a whole sequence and calculates the frecuency of each index.
 ---
 ```python
 def generate_dictionary(sequence, kmer_size, alphabet, o_file_name):
 ```
-> 
+> Generates a dictionary, sort it by kmer index, group them for easier calculations and dump it to a file.
 ---
 ```python
 def group_dictionary(dic):
 ```
-> 
+> Given a sorted dictionary makes a new one 
 ---
 ```python
 def generate_hits(i_file_name_1, i_file_name_2, o_file_name):
