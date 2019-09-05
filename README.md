@@ -1,7 +1,9 @@
 # KmersTYNSA
-## Description
+
+## loadSequence.py
+### Description
 A bunch of methods to work in Python with nucleotides sequences using kmers hash.
-## Methods/Functions
+### Methods/Functions
 ```python
 def load_seq(sequence_file_name):
 ```
@@ -57,3 +59,13 @@ def fragment_extension_from_hits2(hits_file_name, output_file_name, sequence_1, 
 def fragment_extension_from_hits_to_csv(hits_file_name, output_file_name, sequence_1, sequence_2, kmer_size):
 ```
 > Find the seeds and extend them to get and simplify new fragments and dumps it to a csv file. This approach uses the best number of hits as a score to select the fragments.
+---
+## models.py
+### Description
+Some models for better use of the libraries.
+### Models
+```python
+class Kmer:
+class Hit:
+class FragmentExtension:
+```
