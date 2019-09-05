@@ -31,7 +31,7 @@ def compute_frequency(sequence, kmer_size, alphabet):
 ```python
 def generate_dictionary(sequence, kmer_size, alphabet, o_file_name):
 ```
-> Generates a dictionary, sort it by kmer index, group them for easier calculations and dump it to a file.
+> Generates a dictionary, sort it by kmer index, group them for easier calculations and dump it to a file in pickle format.
 ---
 ```python
 def group_dictionary(dic):
@@ -41,19 +41,19 @@ def group_dictionary(dic):
 ```python
 def generate_hits(i_file_name_1, i_file_name_2, o_file_name):
 ```
-> Compares two dictionaries files to get the hits between them and dump it to a file.
+> Compares two dictionaries files to get the hits between them and dump it to a file in pickle format.
 ---
 ```python
 def fragment_extension_from_hits(hits_file_name, output_file_name, sequence_1, sequence_2, kmer_size):
 ```
-> Find the seeds and extend them to get new fragments.
+> Find the seeds and extend them to get and simplify new fragments and dumps it to a file in pickle format to later use. This approach uses the sequence length as a score to select the fragments.
 ---
 ```python
 def fragment_extension_from_hits2(hits_file_name, output_file_name, sequence_1, sequence_2, kmer_size):
 ```
-> 
+> Find the seeds and extend them to get and simplify new fragments and dumps it to a file in pickle format to later use. This approach uses the best number of hits as a score to select the fragments.
 ---
 ```python
 def fragment_extension_from_hits_to_csv(hits_file_name, output_file_name, sequence_1, sequence_2, kmer_size):
 ```
-> 
+> Find the seeds and extend them to get and simplify new fragments and dumps it to a csv file. This approach uses the best number of hits as a score to select the fragments.
