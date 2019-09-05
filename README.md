@@ -1,7 +1,7 @@
 # KmersTYNSA
 ## Description
 A bunch of methods to work in Python with nucleotides sequences using kmers hash.
-### Methods/Functions
+## Methods/Functions
 ```python
 def load_seq(sequence_file_name):
 ```
