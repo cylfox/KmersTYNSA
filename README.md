@@ -1,4 +1,4 @@
-# KmersTYNSA
+# Kmers TYNSA
 
 ## loadSequence.py
 ### Description
