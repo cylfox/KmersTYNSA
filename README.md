@@ -1,6 +1,6 @@
 # KmersTYNSA
 ## Description
-Find seeds for alignments in long nucleotides sequences
+A bunch of methods to work in Python with nucleotides sequences using kmers hash.
 ### Methods/Functions
 ```python
 def load_seq(sequence_file_name):
